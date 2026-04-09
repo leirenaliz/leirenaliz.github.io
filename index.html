@@ -1,17 +1,202 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Mixer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <div class="app">
+    <header class="header">
+      <h1>MUSIC MIXER</h1>
+      <div class="master-controls">
+        <label>Master Vol</label>
+        <input type="range" id="master-volume" min="0" max="1" step="0.01" value="0.8">
+      </div>
+    </header>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+    <div class="mixer-layout">
+      <!-- DECK A -->
+      <div class="deck" id="deck-a">
+        <div class="deck-header">
+          <span class="deck-label">DECK A</span>
+          <span class="deck-genre">Bass / Dubstep / Stutterstep</span>
+        </div>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Hello World! I’m Leiren. This is my website!</p>
+        <div class="drop-zone" id="drop-a">
+          <div class="drop-icon">+</div>
+          <p>Drop audio file here<br><small>or click to browse</small></p>
+          <input type="file" accept="audio/*" class="file-input" id="file-a">
+        </div>
+
+        <div class="track-info" id="info-a">
+          <span class="track-name" id="name-a">No track loaded</span>
+          <span class="track-time" id="time-a">0:00 / 0:00</span>
+        </div>
+
+        <canvas class="waveform" id="waveform-a" width="400" height="80"></canvas>
+
+        <div class="transport">
+          <button class="btn btn-play" id="play-a" disabled>&#9654;</button>
+          <button class="btn btn-stop" id="stop-a" disabled>&#9632;</button>
+          <button class="btn btn-loop" id="loop-a" disabled>&#8634;</button>
+        </div>
+
+        <div class="seek-bar">
+          <input type="range" id="seek-a" min="0" max="100" step="0.1" value="0" disabled>
+        </div>
+
+        <div class="controls-grid">
+          <div class="control-group">
+            <label>Volume</label>
+            <input type="range" class="slider volume-slider" id="vol-a" min="0" max="1" step="0.01" value="0.8">
+          </div>
+          <div class="control-group">
+            <label>Speed</label>
+            <input type="range" class="slider speed-slider" id="speed-a" min="0.5" max="1.5" step="0.01" value="1.0">
+            <span class="speed-display" id="speed-display-a">1.00x</span>
+          </div>
+        </div>
+
+        <div class="eq-section">
+          <span class="eq-title">EQ</span>
+          <div class="eq-knobs">
+            <div class="eq-knob">
+              <label>Hi</label>
+              <input type="range" class="slider eq-slider" id="hi-a" min="-24" max="24" step="1" value="0" orient="vertical">
+              <span class="eq-val" id="hi-val-a">0</span>
+            </div>
+            <div class="eq-knob">
+              <label>Mid</label>
+              <input type="range" class="slider eq-slider" id="mid-a" min="-24" max="24" step="1" value="0" orient="vertical">
+              <span class="eq-val" id="mid-val-a">0</span>
+            </div>
+            <div class="eq-knob">
+              <label>Lo</label>
+              <input type="range" class="slider eq-slider" id="lo-a" min="-24" max="24" step="1" value="0" orient="vertical">
+              <span class="eq-val" id="lo-val-a">0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="fx-section">
+          <span class="fx-title">FX</span>
+          <div class="fx-controls">
+            <div class="control-group">
+              <label>Filter</label>
+              <input type="range" class="slider" id="filter-a" min="20" max="20000" step="1" value="20000">
+            </div>
+            <div class="control-group">
+              <label>Reverb</label>
+              <input type="range" class="slider" id="reverb-a" min="0" max="1" step="0.01" value="0">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENTER / CROSSFADER -->
+      <div class="center-section">
+        <div class="crossfader-section">
+          <span class="cf-label">A</span>
+          <input type="range" id="crossfader" min="0" max="1" step="0.01" value="0.5">
+          <span class="cf-label">B</span>
+        </div>
+        <div class="crossfader-title">CROSSFADER</div>
+
+        <div class="sync-section">
+          <button class="btn btn-sync" id="sync-btn">SYNC SPEED</button>
+        </div>
+
+        <div class="visualizer-section">
+          <canvas id="visualizer" width="200" height="200"></canvas>
+        </div>
+      </div>
+
+      <!-- DECK B -->
+      <div class="deck" id="deck-b">
+        <div class="deck-header">
+          <span class="deck-label">DECK B</span>
+          <span class="deck-genre">Indie Metal / Rock</span>
+        </div>
+
+        <div class="drop-zone" id="drop-b">
+          <div class="drop-icon">+</div>
+          <p>Drop audio file here<br><small>or click to browse</small></p>
+          <input type="file" accept="audio/*" class="file-input" id="file-b">
+        </div>
+
+        <div class="track-info" id="info-b">
+          <span class="track-name" id="name-b">No track loaded</span>
+          <span class="track-time" id="time-b">0:00 / 0:00</span>
+        </div>
+
+        <canvas class="waveform" id="waveform-b" width="400" height="80"></canvas>
+
+        <div class="transport">
+          <button class="btn btn-play" id="play-b" disabled>&#9654;</button>
+          <button class="btn btn-stop" id="stop-b" disabled>&#9632;</button>
+          <button class="btn btn-loop" id="loop-b" disabled>&#8634;</button>
+        </div>
+
+        <div class="seek-bar">
+          <input type="range" id="seek-b" min="0" max="100" step="0.1" value="0" disabled>
+        </div>
+
+        <div class="controls-grid">
+          <div class="control-group">
+            <label>Volume</label>
+            <input type="range" class="slider volume-slider" id="vol-b" min="0" max="1" step="0.01" value="0.8">
+          </div>
+          <div class="control-group">
+            <label>Speed</label>
+            <input type="range" class="slider speed-slider" id="speed-b" min="0.5" max="1.5" step="0.01" value="1.0">
+            <span class="speed-display" id="speed-display-b">1.00x</span>
+          </div>
+        </div>
+
+        <div class="eq-section">
+          <span class="eq-title">EQ</span>
+          <div class="eq-knobs">
+            <div class="eq-knob">
+              <label>Hi</label>
+              <input type="range" class="slider eq-slider" id="hi-b" min="-24" max="24" step="1" value="0" orient="vertical">
+              <span class="eq-val" id="hi-val-b">0</span>
+            </div>
+            <div class="eq-knob">
+              <label>Mid</label>
+              <input type="range" class="slider eq-slider" id="mid-b" min="-24" max="24" step="1" value="0" orient="vertical">
+              <span class="eq-val" id="mid-val-b">0</span>
+            </div>
+            <div class="eq-knob">
+              <label>Lo</label>
+              <input type="range" class="slider eq-slider" id="lo-b" min="-24" max="24" step="1" value="0" orient="vertical">
+              <span class="eq-val" id="lo-val-b">0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="fx-section">
+          <span class="fx-title">FX</span>
+          <div class="fx-controls">
+            <div class="control-group">
+              <label>Filter</label>
+              <input type="range" class="slider" id="filter-b" min="20" max="20000" step="1" value="20000">
+            </div>
+            <div class="control-group">
+              <label>Reverb</label>
+              <input type="range" class="slider" id="reverb-b" min="0" max="1" step="0.01" value="0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Drop your tracks, hit play, and mix away. Use the crossfader to blend between decks.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
