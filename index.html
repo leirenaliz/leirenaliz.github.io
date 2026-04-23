@@ -1,17 +1,74 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birth Month Garden</title>
+  <link href="styles.css" rel="stylesheet">
 </head>
-
 <body>
+  <div class="page">
+    <header>
+      <h1>Birth Month Garden</h1>
+      <p class="subtitle">A personalized bouquet of your family's birth flowers</p>
+    </header>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+    <div class="layout">
+      <section class="controls card">
+        <div class="field">
+          <label for="gardenTitle">Garden title</label>
+          <input type="text" id="gardenTitle" value="Grammy's Garden">
+        </div>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Hello World! I’m Leiren. This is my website!</p>
+        <div class="field">
+          <label>Family members</label>
+          <div id="members"></div>
+          <button type="button" class="btn btn-ghost" id="addMember">+ Add member</button>
+        </div>
+
+        <div class="downloads">
+          <button type="button" class="btn btn-secondary" id="downloadPng">Download PNG</button>
+          <button type="button" class="btn btn-primary" id="downloadSvg">Download SVG</button>
+        </div>
+
+        <details class="legend">
+          <summary>Birth month flowers</summary>
+          <ul>
+            <li><strong>January</strong> Carnation</li>
+            <li><strong>February</strong> Violet</li>
+            <li><strong>March</strong> Daffodil</li>
+            <li><strong>April</strong> Daisy</li>
+            <li><strong>May</strong> Lily</li>
+            <li><strong>June</strong> Rose</li>
+            <li><strong>July</strong> Larkspur</li>
+            <li><strong>August</strong> Gladiolus</li>
+            <li><strong>September</strong> Aster</li>
+            <li><strong>October</strong> Marigold</li>
+            <li><strong>November</strong> Chrysanthemum</li>
+            <li><strong>December</strong> Poinsettia</li>
+          </ul>
+        </details>
+      </section>
+
+      <section class="preview card">
+        <div id="stage"></div>
+      </section>
+    </div>
+  </div>
+
+  <template id="memberTemplate">
+    <div class="member">
+      <div class="member-row">
+        <input type="text" class="m-name" placeholder="Name">
+        <button type="button" class="btn-remove" aria-label="Remove">&times;</button>
+      </div>
+      <div class="member-row">
+        <select class="m-month"></select>
+        <input type="color" class="m-color">
+      </div>
+    </div>
+  </template>
+
+  <script src="garden.js"></script>
 </body>
 </html>

@@ -1,17 +1,256 @@
-* {
-  margin:0px;
-  padding:0px;
+:root {
+  --cream: #fef9f3;
+  --cream-2: #f5ede0;
+  --paper: #ffffff;
+  --ink: #2b2b2b;
+  --sage: #6b8e7a;
+  --deep-green: #2d5a47;
+  --rust: #a64d47;
+  --gold: #d4a574;
+  --line: #e8e0d0;
 }
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  font-family: Georgia, Garamond, serif;
+  color: var(--ink);
+  background: linear-gradient(135deg, var(--cream) 0%, var(--cream-2) 100%);
+  min-height: 100vh;
 }
 
-p {
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 2.6em;
+  color: var(--deep-green);
+}
+
+.subtitle {
+  margin: 0;
+  font-style: italic;
+  color: var(--sage);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+}
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field > label {
   display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  font-weight: 600;
+  color: var(--deep-green);
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  font: inherit;
+  color: var(--ink);
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: var(--sage);
+  background: var(--paper);
+}
+
+input[type="color"] {
+  width: 44px;
+  height: 40px;
+  padding: 2px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--cream);
+  cursor: pointer;
+}
+
+.member {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.member-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.member-row + .member-row {
+  margin-top: 8px;
+}
+
+.member-row .m-name,
+.member-row .m-month {
+  flex: 1;
+  min-width: 0;
+}
+
+.btn {
+  font: inherit;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 11px 16px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.btn:active { transform: translateY(1px); }
+
+.btn-primary {
+  background: var(--deep-green);
+  color: white;
+}
+.btn-primary:hover { background: var(--sage); }
+
+.btn-secondary {
+  background: var(--paper);
+  color: var(--deep-green);
+  border-color: var(--deep-green);
+}
+.btn-secondary:hover {
+  background: var(--deep-green);
+  color: white;
+}
+
+.btn-ghost {
+  width: 100%;
+  margin-top: 8px;
+  background: transparent;
+  color: var(--deep-green);
+  border: 1px dashed var(--sage);
+}
+.btn-ghost:hover {
+  background: var(--cream);
+}
+
+.btn-remove {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--rust);
+  font-size: 1.4em;
+  line-height: 1;
+  cursor: pointer;
+}
+.btn-remove:hover {
+  background: var(--rust);
+  color: white;
+}
+
+.downloads {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.legend {
+  margin-top: 22px;
+  padding: 14px 16px;
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+.legend summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--deep-green);
+}
+
+.legend ul {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 14px;
+  color: #555;
+}
+
+.legend strong {
+  color: var(--deep-green);
+  margin-right: 6px;
+}
+
+.preview {
+  padding: 16px;
+}
+
+#stage {
+  width: 100%;
+  aspect-ratio: 8 / 9;
+  background: var(--paper);
+  border: 1px dashed var(--gold);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#stage svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+body.embed .page {
+  padding: 16px;
+}
+
+body.embed header {
+  display: none;
+}
+
+body.embed {
+  background: transparent;
 }
