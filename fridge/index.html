@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Fridge</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>My Fridge</h1>
+    <p class="tagline">What's in there, and what needs to go.</p>
+  </header>
+
+  <section class="alerts" id="alerts" hidden>
+    <h2>Use soon</h2>
+    <ul id="alert-list"></ul>
+  </section>
+
+  <section class="add">
+    <h2>Add an item</h2>
+    <form id="add-form">
+      <label>
+        Name
+        <input type="text" id="name" required placeholder="e.g. milk" autocomplete="off">
+      </label>
+      <label>
+        Quantity
+        <input type="text" id="qty" placeholder="e.g. 1 carton" autocomplete="off">
+      </label>
+      <label>
+        Expires
+        <input type="date" id="expiry">
+      </label>
+      <button type="submit">Add</button>
+    </form>
+  </section>
+
+  <section class="inventory">
+    <div class="inventory-header">
+      <h2>Inventory <span class="count" id="count">(0)</span></h2>
+      <div class="filters">
+        <button type="button" class="filter active" data-filter="all">All</button>
+        <button type="button" class="filter" data-filter="soon">Use soon</button>
+        <button type="button" class="filter" data-filter="expired">Expired</button>
+        <button type="button" class="filter" data-filter="fresh">Fresh</button>
+      </div>
+    </div>
+    <ul id="items"></ul>
+    <p class="empty" id="empty">Your fridge is empty. Add something above.</p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
