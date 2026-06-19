@@ -41,6 +41,15 @@ mirror edges. Mirror slightly smudged. Chest-up framing.
 - `...fitted oxblood burgundy ribbed tank top...`
 - `...fitted sage olive ribbed tank top...`
 
+**Logo variant — swap "blank chest" wording for:**
+> *...with a small Lavender and Rage wordmark embroidered in cream thread on the left chest area, otherwise solid color...*
+>
+> or for the moth icon:
+>
+> *...with a small subtle moth icon screen-printed in tone-on-tone ink on the left chest, otherwise solid color...*
+>
+> Use logo variants for lifestyle / off-duty / "she's just hanging out at the shop" content. Use blank for product drops where your new design is the hero.
+
 ---
 
 ## Setting B — Bedroom / Home Studio

@@ -14,7 +14,7 @@
 | **Goes by** | Wren |
 | **Age** | 32 |
 | **Pronouns** | she/they |
-| **Occupation** | Tattoo artist & co-owner, Lavender and Rage |
+| **Occupation** | Brand influencer & face of Lavender and Rage |
 | **Hometown** | Somewhere rainy on the Pacific Northwest / Portland-coded |
 | **MBTI-ish vibe** | Quietly intense introvert; dry humor; ferociously loyal |
 
@@ -27,9 +27,9 @@
 
 ## 2. Backstory (keep this consistent in captions & bio copy)
 
-Wren spent her twenties on the road running merch tables for hardcore and dream-pop bands — learning how to fold a shirt in four seconds flat and how to survive on gas station coffee and green room pizza. She got her first tattoo at 18 (a crooked moth on her ribs, still there, still crooked on purpose). At 26 she came off the road and into an apprenticeship. At 32 she co-owns **Lavender and Rage** — a tattoo / piercing studio that also stocks apothecary goods, zines, and merch from bands she used to tour with.
+Wren spent her twenties on the road running merch tables for hardcore and dream-pop bands — learning how to fold a shirt in four seconds flat and how to survive on gas station coffee and green room pizza. She got her first tattoo at 18 (a crooked moth on her ribs, still there, still crooked on purpose). After a decade in the scene, she landed where she actually belongs: as the on-camera face of **Lavender and Rage** — a tattoo & piercing studio with apothecary goods, zines, and band merch she used to schlep across state lines. She models the drops, runs the socials, and shows up in every campaign.
 
-She tattoos like she prays: slowly, and like she means it.
+She wears the brand like she means it.
 
 ---
 
@@ -123,12 +123,17 @@ The whole concept: **her body is the brand.** Right side = lavender (soft, botan
 These are all blank canvases. You will overlay your Lavender & Rage graphics onto them in post. Keep silhouettes simple, keep color true.
 
 ### Tanks (primary — ribbed, fitted, slight crop)
-- **Black** `#0f0d12`
-- **Bone white** `#efe7d8`
-- **Dusty lavender** `#b8a4d4`
-- **Charcoal** `#2a2630`
-- **Oxblood burgundy** `#5c1f2a`
-- **Sage olive** `#6b7059`
+
+Each color comes in **two variants:** *fully blank* (for design overlays) and *shop logo* (small Lavender and Rage wordmark or moth icon, left chest pocket-area placement).
+
+- **Black** `#0f0d12` — blank + logo
+- **Bone white** `#efe7d8` — blank + logo
+- **Dusty lavender** `#b8a4d4` — blank + logo
+- **Charcoal** `#2a2630` — blank + logo
+- **Oxblood burgundy** `#5c1f2a` — blank + logo
+- **Sage olive** `#6b7059` — blank + logo
+
+> **When to use which:** *blank* = drops, new graphics, seasonal designs. *logo* = lifestyle posts, "off-duty" shots, brand-recognition content where the shop is the subject.
 
 ### Cropped boxy tees (for graphic-heavy drops)
 - **Washed black** `#1d1a22`
