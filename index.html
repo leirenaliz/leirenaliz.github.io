@@ -1,17 +1,447 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wren Ashford — The Face of Lavender & Rage</title>
+  <meta name="description" content="Brand character bible and AI prompt library for Wren Ashford, the face of Lavender and Rage." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+<header class="nav">
+  <div class="nav__brand">
+    <span class="nav__lavender">lavender</span>
+    <span class="nav__amp">&amp;</span>
+    <span class="nav__rage">rage</span>
+  </div>
+  <nav class="nav__links">
+    <a href="#bio">wren</a>
+    <a href="#tattoos">tattoos</a>
+    <a href="#wardrobe">wardrobe</a>
+    <a href="#prompts">prompts</a>
+    <a href="portfolio.html">portfolio</a>
+    <a href="#gallery">gallery</a>
+  </nav>
+</header>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Hello World! I’m Leiren. This is my website!</p>
+<section class="hero">
+  <div class="hero__split">
+    <div class="hero__side hero__side--lavender">
+      <span class="hero__tag">soft hands</span>
+    </div>
+    <div class="hero__side hero__side--rage">
+      <span class="hero__tag">sharp needle</span>
+    </div>
+  </div>
+  <div class="hero__content">
+    <p class="hero__kicker">the face of lavender &amp; rage</p>
+    <h1 class="hero__name">Wren<br><em>Ashford</em></h1>
+    <p class="hero__lede">
+      A 32-year-old tattooed brand character built for selfie-style promo.
+      Right arm whispers <span class="lav">lavender</span>.
+      Left arm screams <span class="rage">rage</span>.
+      Every tank is a blank canvas for your designs.
+    </p>
+    <div class="hero__ctas">
+      <a class="btn btn--primary" href="#prompts">copy a prompt</a>
+      <a class="btn btn--ghost" href="character.md">full bible (.md)</a>
+    </div>
+  </div>
+</section>
+
+<section id="bio" class="section">
+  <div class="section__head">
+    <span class="section__num">01</span>
+    <h2 class="section__title">meet wren</h2>
+  </div>
+  <div class="bio">
+    <p>
+      Wren spent her twenties on the road running merch tables for hardcore and dream-pop
+      bands — learning how to fold a shirt in four seconds flat and how to survive on gas
+      station coffee and green room pizza. She got her first tattoo at 18 (a crooked moth
+      on her ribs, still there, still crooked on purpose). After a decade in the scene,
+      she landed where she actually belongs: as the on-camera face of
+      <strong>Lavender and Rage</strong> — a tattoo &amp; piercing studio with apothecary
+      goods, zines, and band merch she used to schlep across state lines. She models the
+      drops, runs the socials, and shows up in every campaign.
+    </p>
+    <p class="bio__quote">
+      <em>&ldquo;She wears the brand like she means it.&rdquo;</em>
+    </p>
+    <ul class="bio__facts">
+      <li><span>age</span>32</li>
+      <li><span>ht</span>5&prime;6&Prime;</li>
+      <li><span>pronouns</span>she / they</li>
+      <li><span>role</span>brand influencer, face of L&amp;R</li>
+      <li><span>rides</span>1978 Bronco, <em>Saint Agnes</em></li>
+      <li><span>keeps</span>Mabel the cat, Bruiser the pit</li>
+      <li><span>drinks</span>cold brew, oat milk, Topo Chico</li>
+    </ul>
+  </div>
+</section>
+
+<section id="specs" class="section section--alt">
+  <div class="section__head">
+    <span class="section__num">02</span>
+    <h2 class="section__title">physical spec sheet</h2>
+    <p class="section__sub">the consistency bible — use these exact descriptors in every AI prompt</p>
+  </div>
+  <div class="specs-grid">
+    <article class="spec-card">
+      <h3>face</h3>
+      <ul>
+        <li>heart-shaped, sharp jaw, soft chin</li>
+        <li>fair skin, cool undertone</li>
+        <li>freckles across nose &amp; cheeks</li>
+        <li>pale grey-green eyes, slightly hooded</li>
+        <li>natural dark brows, subtle slit right side</li>
+        <li>full lips, matte deep-plum</li>
+      </ul>
+    </article>
+    <article class="spec-card">
+      <h3>hair</h3>
+      <ul>
+        <li>collarbone length, blunt cut</li>
+        <li>heavy curtain bangs</li>
+        <li>base: near-black <code>#1a1420</code></li>
+        <li>under-layer: dusty lavender <code>#b8a4d4</code></li>
+        <li>styles: messy bun, space buns, low claw clip</li>
+      </ul>
+    </article>
+    <article class="spec-card">
+      <h3>piercings</h3>
+      <ul>
+        <li>septum clicker (silver)</li>
+        <li>double nose stud, left</li>
+        <li>industrial barbell, right ear</li>
+        <li>conch hoop, left ear</li>
+        <li>stretched 2g lobes, black plugs</li>
+        <li>vertical labret + right eyebrow</li>
+      </ul>
+    </article>
+    <article class="spec-card">
+      <h3>build</h3>
+      <ul>
+        <li>5&prime;6&Prime; / 167cm</li>
+        <li>lean athletic</li>
+        <li>defined shoulders &amp; forearms</li>
+        <li>decade of holding a machine</li>
+      </ul>
+    </article>
+    <article class="spec-card">
+      <h3>makeup</h3>
+      <ul>
+        <li>sharp black winged liner</li>
+        <li>smudged smoky shadow</li>
+        <li>matte deep-plum lip</li>
+        <li>minimal base — freckles show</li>
+      </ul>
+    </article>
+    <article class="spec-card">
+      <h3>jewelry</h3>
+      <ul>
+        <li>stacked silver rings, every finger</li>
+        <li>chunky gold hoops + safety-pin studs</li>
+        <li>layered silver: coin, crescent, padlock</li>
+        <li>black leather wrist cuff</li>
+        <li>vintage gold watch, left wrist</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="tattoos" class="section">
+  <div class="section__head">
+    <span class="section__num">03</span>
+    <h2 class="section__title">tattoo atlas</h2>
+    <p class="section__sub">her body is the brand. right = lavender. left = rage.</p>
+  </div>
+  <div class="tattoo-split">
+    <div class="tattoo-col tattoo-col--lavender">
+      <h3>right arm <span>&mdash; lavender</span></h3>
+      <p class="tattoo-col__style">blackwork &amp; fine-line botanical</p>
+      <ul>
+        <li><strong>wrist</strong> lavender sprigs wrapping like a bracelet</li>
+        <li><strong>inner forearm</strong> luna moth, dotwork shading</li>
+        <li><strong>outer forearm</strong> fine-line snake coiling down</li>
+        <li><strong>elbow ditch</strong> ornamental sun, radiating dots</li>
+        <li><strong>upper arm</strong> thistle, yarrow, wildflower bouquet</li>
+        <li><strong>shoulder cap</strong> dotwork moon-phase arc</li>
+      </ul>
+    </div>
+    <div class="tattoo-col tattoo-col--rage">
+      <h3>left arm <span>&mdash; rage</span></h3>
+      <p class="tattoo-col__style">american traditional / neo-trad</p>
+      <ul>
+        <li><strong>wrist</strong> cluster of cherries, stems on</li>
+        <li><strong>inner forearm</strong> old-english script: <em>RAGE</em></li>
+        <li><strong>outer forearm</strong> dagger through banner</li>
+        <li><strong>elbow</strong> red rose, black thorns</li>
+        <li><strong>upper arm</strong> flaming sacred heart</li>
+        <li><strong>shoulder cap</strong> bold-line panther head</li>
+      </ul>
+    </div>
+  </div>
+  <div class="tattoo-extras">
+    <div class="tattoo-extra">
+      <h4>chest &amp; sternum</h4>
+      <p>Large blackwork moth between collarbones. Fine cursive under right collarbone: <em>et in arcadia ego</em>. Three dots in the sternum hollow.</p>
+    </div>
+    <div class="tattoo-extra">
+      <h4>neck</h4>
+      <p>Crescent moon behind right ear. Lavender sprig on left side of neck. Three-dot vertical line, center throat.</p>
+    </div>
+    <div class="tattoo-extra">
+      <h4>hands</h4>
+      <p>Right knuckles: fine-line wildflower per finger. Left fingers: eye, lightning, star, crescent, X. Tiny stick-and-poke X's in thumb webbings.</p>
+    </div>
+    <div class="tattoo-extra">
+      <h4>back &amp; thighs</h4>
+      <p>Full back: luna moth in botanical vines. Right thigh: snake through rose. Left thigh: blackwork witch's hands holding a candle.</p>
+    </div>
+  </div>
+</section>
+
+<section id="wardrobe" class="section section--alt">
+  <div class="section__head">
+    <span class="section__num">04</span>
+    <h2 class="section__title">wardrobe</h2>
+    <p class="section__sub">solid-color tops. blank canvases. overlay your designs in post.</p>
+  </div>
+
+  <div class="variant-callout">
+    <div class="variant-callout__item">
+      <span class="variant-callout__tag variant-callout__tag--blank">blank</span>
+      <p>fully blank chest — overlay new graphics &amp; drops in post.</p>
+    </div>
+    <div class="variant-callout__item">
+      <span class="variant-callout__tag variant-callout__tag--logo">+ logo</span>
+      <p>small Lavender &amp; Rage wordmark or moth icon, left chest. for lifestyle &amp; brand-recognition shots.</p>
+    </div>
+  </div>
+
+  <h3 class="subhead">primary tanks — ribbed, fitted, slight crop · blank + logo variants</h3>
+  <div class="swatches">
+    <div class="swatch"><span class="swatch__chip" style="background:#0f0d12"></span><strong>black</strong><code>#0f0d12</code></div>
+    <div class="swatch"><span class="swatch__chip" style="background:#efe7d8"></span><strong>bone white</strong><code>#efe7d8</code></div>
+    <div class="swatch"><span class="swatch__chip" style="background:#b8a4d4"></span><strong>dusty lavender</strong><code>#b8a4d4</code></div>
+    <div class="swatch"><span class="swatch__chip" style="background:#2a2630"></span><strong>charcoal</strong><code>#2a2630</code></div>
+    <div class="swatch"><span class="swatch__chip" style="background:#5c1f2a"></span><strong>oxblood</strong><code>#5c1f2a</code></div>
+    <div class="swatch"><span class="swatch__chip" style="background:#6b7059"></span><strong>sage olive</strong><code>#6b7059</code></div>
+  </div>
+
+  <h3 class="subhead">cropped boxy tees — graphic-heavy drops · blank + logo variants</h3>
+  <div class="swatches">
+    <div class="swatch"><span class="swatch__chip" style="background:#1d1a22"></span><strong>washed black</strong><code>#1d1a22</code></div>
+    <div class="swatch"><span class="swatch__chip" style="background:#f3ecdf"></span><strong>off-white</strong><code>#f3ecdf</code></div>
+    <div class="swatch"><span class="swatch__chip" style="background:#8c8996"></span><strong>heather grey</strong><code>#8c8996</code></div>
+  </div>
+
+  <h3 class="subhead">outerwear</h3>
+  <ul class="simple-list">
+    <li>black zip-up hoodie, blank chest</li>
+    <li>lavender crewneck, blank chest</li>
+    <li>oversized black leather jacket, open, tank underneath</li>
+  </ul>
+</section>
+
+<section id="settings" class="section">
+  <div class="section__head">
+    <span class="section__num">05</span>
+    <h2 class="section__title">the four settings</h2>
+    <p class="section__sub">consistent backdrops = stronger brand recognition</p>
+  </div>
+  <div class="setting-grid">
+    <article class="setting">
+      <span class="setting__letter">A</span>
+      <h3>bathroom mirror</h3>
+      <p>Cream subway tile. Warm brass sconces. Pothos plant. A single pillar candle. Phone half-visible in a tattooed hand.</p>
+    </article>
+    <article class="setting">
+      <span class="setting__letter">B</span>
+      <h3>bedroom / studio</h3>
+      <p>Low amber lamp. Off-white linen, oxblood throw. Black sheer curtains. Tattoo flash on the wall. Open tarot deck.</p>
+    </article>
+    <article class="setting">
+      <span class="setting__letter">C</span>
+      <h3>car / outdoor</h3>
+      <p>Driver's seat of Saint Agnes — matte black '78 Bronco. Golden hour flare. Or: brick alley, graffiti tag, sodium-vapor dusk.</p>
+    </article>
+    <article class="setting">
+      <span class="setting__letter">D</span>
+      <h3>neutral wall</h3>
+      <p>Plain dusty-lavender or bone plaster. Soft window light from the left. The design is the hero here.</p>
+    </article>
+  </div>
+</section>
+
+<section id="prompts" class="section section--alt">
+  <div class="section__head">
+    <span class="section__num">06</span>
+    <h2 class="section__title">prompt library</h2>
+    <p class="section__sub">copy. paste. generate. regenerate until she looks like herself.</p>
+  </div>
+
+  <article class="prompt-card">
+    <header class="prompt-card__head">
+      <h3>the character anchor</h3>
+      <p>paste this at the top of every prompt — it does 80% of the consistency work</p>
+    </header>
+    <pre><code>32-year-old woman, heart-shaped face, sharp jaw, pale grey-green
+eyes, freckles across nose and cheeks, collarbone-length near-black
+hair with dusty lavender under-layer and heavy curtain bangs, matte
+deep-plum lipstick, sharp black winged eyeliner, silver septum
+piercing, double nose stud on left, stretched lobes with black plugs,
+industrial ear barbell, vertical labret. Heavily tattooed: blackwork
+botanical right sleeve (lavender sprigs, luna moth, fine-line snake),
+American traditional left sleeve (dagger, rose, flaming heart, "RAGE"
+script), blackwork moth on chest between collarbones, small neck
+tattoos, tattooed fingers. Lean athletic build, 5'6". Silver stacked
+rings, gold hoop earrings, layered silver necklaces.</code></pre>
+  </article>
+
+  <article class="prompt-card">
+    <header class="prompt-card__head">
+      <h3>setting D &mdash; neutral wall (use this most)</h3>
+      <p>cleanest overlay area for your designs. chest stays unobstructed.</p>
+    </header>
+    <pre><code>[CHARACTER ANCHOR]
+
+Wearing a fitted black ribbed tank top, perfectly blank chest area,
+solid color, even lighting across the torso, clean cotton weave for
+high-fidelity design overlay in post-production. Standing square to
+camera against a plain dusty-lavender plaster wall, soft diffused
+window light from the left, gentle shadow on right side. Phone held
+at shoulder height for selfie, minimal expression, calm eye contact.
+Waist-up framing, tank fully visible from neckline to mid-ribcage,
+no obstruction of chest area.
+
+Shot on iPhone 15 Pro, candid selfie, Kodak Portra 400 film grain,
+unretouched skin texture, shallow depth of field, 4:5 vertical.</code></pre>
+  </article>
+
+  <article class="prompt-card">
+    <header class="prompt-card__head">
+      <h3>setting A &mdash; bathroom mirror</h3>
+      <p>classic. sells the "real person" illusion.</p>
+    </header>
+    <pre><code>[CHARACTER ANCHOR]
+
+Wearing a fitted dusty-lavender ribbed tank top, blank chest, solid
+color, clean cotton texture for post-production design overlay.
+Bathroom mirror selfie, phone held in tattooed right hand partially
+covering the lower face, other hand relaxed. Cream subway tile walls,
+warm brass sconces, small pothos plant, single lit pillar candle,
+slight fog at mirror edges. Chest-up framing.
+
+Shot on iPhone 15 Pro, candid selfie, Kodak Portra 400 film grain,
+unretouched skin, moody warm tones.</code></pre>
+  </article>
+
+  <article class="prompt-card">
+    <header class="prompt-card__head">
+      <h3>setting C &mdash; the bronco</h3>
+      <p>for hero shots, campaign drops, merch launches</p>
+    </header>
+    <pre><code>[CHARACTER ANCHOR]
+
+Wearing a fitted oxblood ribbed tank top, blank chest, solid color.
+Seated in the driver's seat of a matte black vintage 1978 Ford
+Bronco, golden hour sun streaming through the windshield creating
+warm lens flare across her chest. Hand on steering wheel showing
+left-arm traditional tattoos. Phone in the other hand for selfie.
+Dust motes in the light. Shoulders-up framing.
+
+Shot on Contax T2 film camera, Kodak Portra 400, candid, cinematic
+golden hour color grade.</code></pre>
+  </article>
+
+  <article class="prompt-card prompt-card--negative">
+    <header class="prompt-card__head">
+      <h3>negative prompt — always include</h3>
+    </header>
+    <pre><code>airbrushed skin, plastic skin, over-smoothed face, glamour retouching,
+fake-looking tattoos, text on clothing, logo on clothing, graphic
+print on clothing, visible brand label, studio softbox, uncanny eyes,
+extra fingers, malformed hands, warped jewelry, melted piercings,
+blurry tattoos, cartoonish, anime, 3D render, CGI, watermark,
+duplicate person</code></pre>
+  </article>
+
+  <p class="prompt-footnote">
+    full prompt library with every tank color variant &amp; outdoor/alley alternatives in
+    <a href="prompts.md">prompts.md</a>.
+  </p>
+</section>
+
+<section class="section portfolio-teaser">
+  <div class="section__head">
+    <span class="section__num">07</span>
+    <h2 class="section__title">the wider portfolio</h2>
+    <p class="section__sub">wren leads, but she doesn&rsquo;t go it alone &mdash; 19 more personas built for the brand</p>
+  </div>
+  <div class="teaser-grid">
+    <div class="teaser teaser--inf">
+      <span class="teaser__count">05</span>
+      <h3>influencers</h3>
+      <p>brand ambassadors who wear the drops &mdash; piercing specialists, guest artists, the apothecary face, the gen-z voice.</p>
+    </div>
+    <div class="teaser teaser--cus">
+      <span class="teaser__count">15</span>
+      <h3>customers</h3>
+      <p>the community that walks through the shop door &mdash; bartenders, musicians, nurses, bikers, baristas, grandmothers.</p>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top: 36px;">
+    <a class="btn btn--primary" href="portfolio.html">see all 20 personas</a>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="section__head">
+    <span class="section__num">08</span>
+    <h2 class="section__title">gallery</h2>
+    <p class="section__sub">drop your generated selfies into <code>/images/</code> and they&rsquo;ll slot in here</p>
+  </div>
+  <div class="gallery">
+    <div class="gallery__slot"><span>mirror / black tank</span></div>
+    <div class="gallery__slot"><span>neutral wall / lavender tank</span></div>
+    <div class="gallery__slot"><span>bronco / oxblood tank</span></div>
+    <div class="gallery__slot"><span>bedroom / bone tank</span></div>
+    <div class="gallery__slot"><span>alley / white tank</span></div>
+    <div class="gallery__slot"><span>studio / olive tank</span></div>
+  </div>
+</section>
+
+<section class="section section--alt playbook">
+  <div class="section__head">
+    <span class="section__num">09</span>
+    <h2 class="section__title">consistency playbook</h2>
+  </div>
+  <ol class="playbook__steps">
+    <li>Pick one <strong>hero generation</strong> where her face is perfect. Save it.</li>
+    <li>In Midjourney use <code>--cref [hero-url] --cw 90</code> on every subsequent prompt.</li>
+    <li>In SD / ComfyUI, train a small LoRA on 15&ndash;20 hero images, or use IP-Adapter Face.</li>
+    <li>In DALL&middot;E / GPT-image, upload the hero &amp; say <em>&ldquo;same woman, same face, same tattoos, different outfit.&rdquo;</em></li>
+    <li>If the face drifts, <strong>regenerate</strong>. Don&rsquo;t ship a Wren that isn&rsquo;t Wren.</li>
+    <li>Keep the chest area <strong>unobstructed</strong> in product shots so your design sits cleanly.</li>
+    <li>Always add the tattoo sleeves &mdash; without them, she reads generic.</li>
+  </ol>
+</section>
+
+<footer class="footer">
+  <div class="footer__brand">
+    <span class="nav__lavender">lavender</span>
+    <span class="nav__amp">&amp;</span>
+    <span class="nav__rage">rage</span>
+  </div>
+  <p>Wren Ashford is a fictional brand character. All generated imagery is AI-produced and clearly disclosable as such per platform policy.</p>
+  <p class="footer__meta">built for leirenaliz.github.io &middot; <a href="character.md">character.md</a> &middot; <a href="prompts.md">prompts.md</a></p>
+</footer>
+
 </body>
 </html>
