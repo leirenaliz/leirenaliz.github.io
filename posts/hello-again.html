@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rebuilding this site from scratch — leiren.aliz</title>
+  <meta name="description" content="Notes on tearing down the default GitHub Pages template and building a real writing site." />
+  <meta name="color-scheme" content="light dark" />
+  <link href="../styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header class="masthead">
+      <span class="prompt">leiren@web:~$ cat hello-again.md</span>
+      <h1>leiren.aliz<span class="cursor" aria-hidden="true"></span></h1>
+      <nav class="topnav" aria-label="Primary">
+        <a href="../index.html">home</a>
+        <a href="../blog.html">writing</a>
+        <a href="../index.html#about">about</a>
+        <a href="mailto:leiren.aliz@gmail.com">contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <a class="backlink" href="../blog.html">all writing</a>
+
+      <article class="post">
+        <h1 class="post-title">Rebuilding this site from scratch</h1>
+        <div class="meta">2026-07-07 · meta · ~2 min read</div>
+
+        <p>
+          For years this domain pointed at the default GitHub Pages
+          tutorial — a spinning octocat and the line "Hello World! I'm
+          Leiren." It did its job: the site was live. But it was never
+          <em>mine</em>.
+        </p>
+
+        <p>
+          So I tore it down and rebuilt it as what I actually wanted: a
+          quiet, monospace place to write. No framework, no build step,
+          no 200KB of JavaScript to render a paragraph. Just HTML and one
+          stylesheet you can read top to bottom.
+        </p>
+
+        <h2>the whole stack</h2>
+        <p>Here's the entire dependency list:</p>
+        <pre><code>index.html    # home
+blog.html     # the list of posts
+posts/*.html  # the posts themselves
+styles.css    # ~250 lines, light + dark</code></pre>
+
+        <p>
+          That's it. It loads instantly, works with JavaScript disabled,
+          and I can understand every line six months from now.
+        </p>
+
+        <blockquote>
+          The best stack is the one you can hold in your head.
+        </blockquote>
+
+        <h2>what's next</h2>
+        <p>
+          More writing, mostly. If I ever grow tired of hand-editing
+          HTML I'll add a tiny generator — but not before I actually
+          need one.
+        </p>
+      </article>
+    </main>
+
+    <footer class="site">
+      <span>© 2026 Leiren</span>
+      <span><a href="../blog.html">writing</a></span>
+    </footer>
+
+  </div>
+</body>
+</html>

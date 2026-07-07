@@ -1,17 +1,76 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>leiren.aliz — writing</title>
+  <meta name="description" content="Notes and writing by Leiren. A small monospace corner of the web." />
+  <meta name="color-scheme" content="light dark" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <div class="wrap">
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+    <header class="masthead">
+      <span class="prompt">leiren@web:~$ whoami</span>
+      <h1>leiren.aliz<span class="cursor" aria-hidden="true"></span></h1>
+      <nav class="topnav" aria-label="Primary">
+        <a href="index.html" aria-current="page">home</a>
+        <a href="blog.html">writing</a>
+        <a href="#about">about</a>
+        <a href="mailto:leiren.aliz@gmail.com">contact</a>
+      </nav>
+    </header>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Hello World! I’m Leiren. This is my website!</p>
+    <main>
+      <p class="lead">
+        Hi, I'm Leiren. This is my little corner of the internet — mostly
+        notes to myself, half-finished thoughts, and the occasional thing
+        I figured out and didn't want to forget.
+      </p>
+
+      <div class="ascii-rule" aria-hidden="true">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+
+      <h2>latest</h2>
+      <ul class="postlist">
+        <li>
+          <time datetime="2026-07-07">2026-07-07</time>
+          <a class="title" href="posts/hello-again.html">Rebuilding this site from scratch</a>
+          <span class="tag">meta</span>
+        </li>
+        <li>
+          <time datetime="2026-06-20">2026-06-20</time>
+          <a class="title" href="posts/on-monospace.html">Why everything I make ends up monospace</a>
+          <span class="tag">design</span>
+        </li>
+      </ul>
+
+      <p style="margin-top:18px;">
+        <a href="blog.html">› see all writing</a>
+      </p>
+
+      <h2 id="about">about</h2>
+      <p>
+        I build things for the web and write about the parts worth
+        remembering. I like plain text, tools that get out of the way,
+        and interfaces that feel like a terminal you actually want to
+        live in.
+      </p>
+      <p>
+        Find me around the web:
+      </p>
+      <ul class="plain" style="line-height:2;">
+        <li>→ <a href="https://github.com/leirenaliz">github.com/leirenaliz</a></li>
+        <li>→ <a href="mailto:leiren.aliz@gmail.com">leiren.aliz@gmail.com</a></li>
+      </ul>
+    </main>
+
+    <footer class="site">
+      <span>© 2026 Leiren</span>
+      <span>built with plain html + css</span>
+    </footer>
+
+  </div>
 </body>
 </html>
